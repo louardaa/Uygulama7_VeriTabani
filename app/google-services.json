@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "291900423388",
+    "project_id": "urunlerfirebase-9ecd1",
+    "storage_bucket": "urunlerfirebase-9ecd1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:291900423388:android:0061ea085ec11eebeb8819",
+        "android_client_info": {
+          "package_name": "com.example.uygulama7_veritabani"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "291900423388-f7cfljinj5012akapg1q90e3p501og7v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChrYHmHRICxYcWBMBmJVfMdDR6DzZzBVo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "291900423388-f7cfljinj5012akapg1q90e3p501og7v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
