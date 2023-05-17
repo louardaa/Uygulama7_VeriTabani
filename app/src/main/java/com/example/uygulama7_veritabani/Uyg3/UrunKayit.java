@@ -1,4 +1,4 @@
-package com.example.uygulama7_veritabani.Uyg1;
+package com.example.uygulama7_veritabani.Uyg3;
 
 import android.content.Intent;
 import android.database.Cursor;
@@ -11,6 +11,7 @@ import android.widget.EditText;
 import com.example.uygulama7_veritabani.R;
 
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class UrunKayit extends AppCompatActivity {
@@ -22,10 +23,17 @@ public class UrunKayit extends AppCompatActivity {
     Button btnKaydet;
     int id;
 
+    public void kayitgec (View view) {
+        Intent i = new Intent(UrunKayit.this, Uyg3.class);
+
+        startActivity(i);
+    }
+
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.uyg1_kayit);
+        setContentView(R.layout.uyg3_kayit);
         urunadi = findViewById(R.id.editKayitUrunadi);
         urunFiyat = findViewById(R.id.editKayitFiyat);
         urunAdet = findViewById(R.id.editKayitAdet);
@@ -68,15 +76,18 @@ public class UrunKayit extends AppCompatActivity {
                      durumlar.bindLong(4, id);
                      durumlar.execute();
                  } else {
+
+                 }
                      String SORGU = "INSERT INTO urunler(urunadi,fiyat,adet) VALUES(?,?,?)";
                      SQLiteStatement durumlar = database.compileStatement(SORGU);
                      durumlar.bindString(1, urunadi.getText().toString());
-                     durumlar.bindDouble(2,
-                             Double.parseDouble(urunFiyat.getText().toString()));
-                     durumlar.bindLong(3,
-                             Integer.parseInt(urunAdet.getText().toString()));
+                     durumlar.bindDouble(2, Double.parseDouble(urunFiyat.getText().toString()));
+                     durumlar.bindLong(3, Integer.parseInt(urunAdet.getText().toString()));
                      durumlar.execute();
                  }
+                 public void kayituygec (View view) {
+
+
              }
          });
     }

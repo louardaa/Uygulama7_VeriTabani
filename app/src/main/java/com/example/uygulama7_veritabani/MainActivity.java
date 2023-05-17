@@ -7,8 +7,8 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.uygulama7_veritabani.Uyg1.UrunDetay;
-import com.example.uygulama7_veritabani.Uyg1.UrunKayit;
+import com.example.uygulama7_veritabani.Uyg3.UrunKayit;
+import com.example.uygulama7_veritabani.Uyg3.Uyg3;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -34,3 +34,4 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 }
+

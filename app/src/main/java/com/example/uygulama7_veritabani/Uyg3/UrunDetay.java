@@ -1,4 +1,4 @@
-package com.example.uygulama7_veritabani.Uyg1;
+package com.example.uygulama7_veritabani.Uyg3;
 
 import android.Manifest;
 import android.content.ContentValues;
@@ -52,7 +52,7 @@ public class UrunDetay extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.uyg1_kayit);
+        setContentView(R.layout.uyg3_kayit);
         urunadi=findViewById(R.id.txtUrunadi);
         urunFiyat=findViewById(R.id.txtUrunFiyati);
         urunAdet=findViewById(R.id.txtUrunAdet);

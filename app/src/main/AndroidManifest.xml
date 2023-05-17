@@ -23,8 +23,12 @@
 
             </intent-filter>
         </activity>
-        <activity android:name=".Uyg1.UrunKayit"></activity>
-        <activity android:name=".Uyg1.UrunDetay"></activity>
+        <activity android:name=".Uyg3.Uyg3"></activity>
+        <activity android:name=".Uyg3.UrunKayit"></activity>
+        <activity android:name=".Uyg3.UrunDetay"></activity>
+
+
+
     </application>
 
 </manifest>

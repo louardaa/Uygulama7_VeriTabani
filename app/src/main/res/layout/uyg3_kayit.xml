@@ -7,15 +7,15 @@
 
     <Button
         android:id="@+id/btnKayit"
-        android:layout_width="709dp"
-        android:layout_height="124dp"
-        android:layout_marginStart="125dp"
-        android:layout_marginTop="180dp"
-        android:layout_marginEnd="126dp"
-        android:layout_marginBottom="166dp"
+        android:layout_width="353dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="50dp"
         android:background="#30B62B"
         android:backgroundTint="#3ACA3C"
         android:foregroundTint="#972F2F"
+        android:onClick="uyg1DetayGoster"
         android:shadowColor="#31C627"
         android:text="Kaydet"
         android:textColor="#FFFFFF"
@@ -25,103 +25,94 @@
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editKayitAdet"
+        app:layout_constraintTop_toBottomOf="@+id/editKayitFiyat"
         app:rippleColor="@android:color/system_accent2_600"
         app:strokeColor="#A81B1B" />
 
     <EditText
-        android:id="@+id/editKayitAdet"
-        android:layout_width="893dp"
-        android:layout_height="130dp"
-        android:layout_marginStart="51dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="180dp"
-        android:ems="10"
-        android:hint="Ürün Miktarı"
-        android:inputType="textPersonName"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnKayit"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
-
-    <EditText
         android:id="@+id/editKayitUrunadi"
-        android:layout_width="893dp"
-        android:layout_height="124dp"
-        android:layout_marginBottom="78dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:ems="10"
         android:hint="Ürün Adı"
-        android:inputType="textPersonName"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
-        tools:layout_editor_absoluteX="45dp" />
-
-    <EditText
-        android:id="@+id/editKayitFiyat"
-        android:layout_width="887dp"
-        android:layout_height="124dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="13dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="130dp"
-        android:ems="10"
-        android:hint="Ürün Fiyatı"
         android:inputType="textPersonName"
         android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/textView5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/editKayitAdet"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="3dp"
+        android:ems="10"
+        android:hint="Ürün Miktarı"
+        android:inputType="textPersonName"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="@+id/editKayitFiyat"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/editKayitFiyat"
+        android:layout_width="371dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="68dp"
+        android:ems="10"
+        android:hint="Ürün Fiyatı"
+        android:inputType="textPersonName"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnKayit"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="219dp"
-        android:layout_height="125dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginEnd="696dp"
-        android:layout_marginBottom="13dp"
+        android:layout_width="167dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginBottom="2dp"
         android:background="#FFFFFF"
         android:hint="Ürün Fiyatı"
         android:text="Fiyat"
         android:textColor="#FD0000"
         android:textSize="50dp"
         app:layout_constraintBottom_toTopOf="@+id/editKayitFiyat"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editKayitAdet" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="222dp"
-        android:layout_height="131dp"
-        android:layout_marginStart="51dp"
-        android:layout_marginEnd="687dp"
-        android:layout_marginBottom="8dp"
+        android:layout_width="194dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="83dp"
         android:background="#FFFFFF"
         android:hint="Ürün Adı"
         android:text="Ürün Adı"
         android:textColor="#FD0000"
         android:textSize="50dp"
         app:layout_constraintBottom_toTopOf="@+id/editKayitUrunadi"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="200dp"
-        android:layout_height="125dp"
-        android:layout_marginStart="51dp"
-        android:layout_marginTop="130dp"
-        android:layout_marginEnd="709dp"
+        android:layout_width="229dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="7dp"
         android:background="#FFFFFF"
         android:hint="Ürün Miktarı"
         android:text="Adet"
         android:textColor="#FD0000"
         android:textSize="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/editKayitAdet"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editKayitFiyat" />
+        app:layout_constraintTop_toBottomOf="@+id/editKayitUrunadi" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
