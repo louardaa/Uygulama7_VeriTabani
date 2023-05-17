@@ -15,7 +15,7 @@
         android:background="#30B62B"
         android:backgroundTint="#3ACA3C"
         android:foregroundTint="#972F2F"
-        android:onClick="uyg1DetayGoster"
+        android:onClick="kayitgec"
         android:shadowColor="#31C627"
         android:text="Kaydet"
         android:textColor="#FFFFFF"
@@ -28,7 +28,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editKayitFiyat"
-        app:rippleColor="@android:color/system_accent2_600"
+
         app:strokeColor="#A81B1B" />
 
     <EditText
