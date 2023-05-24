@@ -19,7 +19,7 @@ import com.example.uygulama7_veritabani.R;
 import java.util.ArrayList;
 
 public class Uyg3 extends AppCompatActivity {
-    private static final MessagePattern.ArgType FROM = ;
+
     SQLiteDatabase databese;
     Urun urun;
     ArrayList<Urun> urunler;
